@@ -1,1 +1,42 @@
 /*  your css code here. If applicable */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    width:95%;
+    margin:20px auto;
+
+    display:grid;
+    gap:6px;
+
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:90px 90px 90px 90px 90px;
+
+    grid-template-areas:
+        "one one one one"
+        "two three four four"
+        "two five five six"
+        "two seven eight nine"
+        "two ten ten ten";
+}
+
+.box{
+    background:green;
+    color:white;
+    font-size:28px;
+    padding:10px;
+}
+
+.box1{grid-area:one;}
+.box2{grid-area:two;}
+.box3{grid-area:three;}
+.box4{grid-area:four;}
+.box5{grid-area:five;}
+.box6{grid-area:six;}
+.box7{grid-area:seven;}
+.box8{grid-area:eight;}
+.box9{grid-area:nine;}
+.box10{grid-area:ten;}
